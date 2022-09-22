@@ -1,7 +1,7 @@
 import axios, {Method} from 'axios';
 export const executeRequest = (endpoint: string, method: Method, body?: any) => {
     const headers = {'Content-Type': 'application/json'} as any
-
+#which one?
     const accessToken = localStorage.getItem("accessToken");
     if(accessToken){
         headers['Authorization'] = 'Bearer ' + accessToken
